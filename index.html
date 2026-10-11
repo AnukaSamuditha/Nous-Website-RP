@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nous Research · R26-SE-035 · SLIIT</title>
+  <meta name="description" content="Research documentation website for Nous, an integrated curriculum-grounded digital learning platform for Sri Lankan G.C.E. Ordinary Level students (R26-SE-035, SLIIT).">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..800;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    /* Apply the saved theme before first paint. Without JS the site follows the OS preference. */
+    (function () {
+      try {
+        var t = localStorage.getItem('nous-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="#home" aria-label="Nous research – back to top">
+        <img src="assets/images/nous-logo.png" alt="Nous" width="440" height="158">
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home" aria-current="true">Home</a></li>
+          <li><a href="#domain">Domain</a></li>
+          <li><a href="#milestones">Milestones</a></li>
+          <li><a href="#documents">Documents</a></li>
+          <li><a href="#presentations">Presentations</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch colour theme" hidden>
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+        </button>
+        <a class="btn btn-primary btn-sm nav-cta" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HOME / HERO ============ -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="badge reveal-hero"><span class="badge-tag">R26-SE-035</span></p>
+        <h1 id="hero-title" class="hero-title reveal-hero">
+          Curriculum-grounded learning for <span class="grad-text">Sri Lankan O/L</span> students
+        </h1>
+        <p class="hero-lede reveal-hero">
+          Nous is a research project investigating an integrated, bilingual (English–Sinhala) digital learning platform
+          for G.C.E. Ordinary Level students. This site documents the full research journey, from proposal to final assessment.
+        </p>
+        <div class="hero-ctas reveal-hero">
+          <a class="btn btn-primary" href="#domain">Explore the research
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost" href="#documents">View documents</a>
+        </div>
+
+        <div class="hero-stage" aria-label="Screenshots of the Nous mobile application">
+          <div class="orbit orbit-1" aria-hidden="true"></div>
+          <div class="orbit orbit-2" aria-hidden="true"></div>
+          <div class="orbit orbit-3" aria-hidden="true"></div>
+          <div class="orbit orbit-4" aria-hidden="true"></div>
+
+          <figure class="phone phone-side phone-left">
+            <div class="phone-screen"><img src="assets/images/screen-quiz.jpg" alt="Nous quiz screen with practice and online 1v1 modes and accuracy statistics" width="600" height="1304" loading="lazy"></div>
+          </figure>
+          <figure class="phone phone-side phone-right">
+            <div class="phone-screen"><img src="assets/images/screen-lab.jpg" alt="Nous virtual laboratory screen listing chemistry, biology and physics labs" width="600" height="1304" loading="lazy"></div>
+          </figure>
+          <figure class="phone phone-main">
+            <div class="phone-screen"><img src="assets/images/screen-assistant.jpg" alt="Nous AI learning assistant home screen with suggested prompts such as Study Guidance, Science Concepts and Explore Experiments" width="600" height="1305"></div>
+          </figure>
+
+          <div class="float-card fc-1" aria-hidden="true">
+            <span class="fc-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h10M4 19h7"/><path d="M17 15l2 2 3-4"/></svg>
+            </span>
+            <div><strong>4 components</strong><span>One integrated platform</span></div>
+          </div>
+          <div class="float-card fc-2" aria-hidden="true">
+            <span class="fc-lang">EN <i>·</i> <span lang="si">සිං</span></span>
+            <div><strong>Bilingual</strong><span>English &amp; Sinhala</span></div>
+          </div>
+          <div class="float-card fc-3" aria-hidden="true">
+            <div class="fc-metric">91<small>%</small></div>
+            <div><strong>Curriculum alignment</strong><span>Reported · team paper</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project facts -->
+    <section class="facts" aria-label="Project facts">
+      <div class="container">
+        <dl class="facts-grid">
+          <div class="fact"><dt><span class="fact-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 9h16M4 15h16M10 3 8 21M16 3l-2 18"/></svg></span>Group ID</dt><dd>R26-SE-035</dd></div>
+          <div class="fact"><dt><span class="fact-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V10M19 21V10M9.5 21V10M14.5 21V10M12 3 3 8h18z"/></svg></span>Institution</dt><dd>SLIIT</dd></div>
+          <div class="fact"><dt><span class="fact-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 8l6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></svg></span>Supported languages</dt><dd>English · <span lang="si">සිංහල</span></dd></div>
+          <div class="fact"><dt><span class="fact-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>Project stage</dt><dd><span class="status status-stage">Final presentation</span></dd></div>
+          <div class="fact"><dt><span class="fact-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 6h18v15H3zM16 2v4M8 2v4M3 10h18"/></svg></span>Last updated</dt><dd><time datetime="2026-10-11">11 Oct 2026</time></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Abstract -->
+    <section class="section" id="abstract" aria-labelledby="abstract-title">
+      <div class="container split">
+        <div class="split-head">
+          <p class="eyebrow">Abstract</p>
+          <h2 id="abstract-title" class="h2">One research team, <span class="grad-text">four connected</span> questions</h2>
+        </div>
+        <div class="prose abstract-text reveal">
+          <p>
+            Most digital study tools used by Sri Lankan O/L students are not aligned to the national curriculum, offer limited
+            Sinhala support, and treat explanation, practice, practical science and revision as separate activities.
+          </p>
+          <p>
+            This research investigates <strong>Nous</strong>, an integrated, bilingual learning platform for Grades 10–11 built on
+            four components: a curriculum-grounded learning assistant, adaptive quizzes with mastery tracking, an AI-guided
+            virtual science lab, and handwritten-note analysis.
+          </p>
+          <p>
+            The aim is an explainable learning loop grounded in the local curriculum, with each component evaluated.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Components -->
+    <section class="section section-tint" id="components" aria-labelledby="components-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Research components</p>
+          <h2 id="components-title" class="h2">Four components, one learning loop</h2>
+          <p class="lede">Each component is an independent research contribution, integrated through a shared curriculum base and learner profile.</p>
+        </div>
+        <div class="comp-grid">
+
+          <!-- 01 · Learning assistant -->
+          <article class="comp-card comp-wide reveal">
+            <div class="comp-visual" aria-hidden="true">
+              <svg class="ill" viewBox="0 0 560 240" preserveAspectRatio="xMidYMid meet">
+                <g class="a-in">
+                  <rect x="32" y="26" width="98" height="32" rx="16" class="surf"/>
+                  <rect x="36" y="30" width="46" height="24" rx="12" class="or"/>
+                  <text x="59" y="46.5" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">EN</text>
+                  <text x="106" y="46.5" text-anchor="middle" font-size="12" class="t-muted" lang="si">සිං</text>
+                </g>
+                <g class="a-pop d1">
+                  <rect x="286" y="22" width="242" height="44" rx="20" class="or"/>
+                  <text x="407" y="49" text-anchor="middle" font-size="14" font-weight="500" fill="#fff">What is photosynthesis?</text>
+                </g>
+                <g class="a-pop d2 lift">
+                  <rect x="32" y="82" width="320" height="110" rx="20" class="surf"/>
+                  <circle cx="60" cy="110" r="14" class="or-soft"/>
+                  <path d="M60 101l2.4 6.2 6.2 2.4-6.2 2.4-2.4 6.2-2.4-6.2-6.2-2.4 6.2-2.4z" class="or"/>
+                  <rect x="86" y="102" width="236" height="9" rx="4.5" class="ln a-grow d3"/>
+                  <rect x="86" y="119" width="206" height="9" rx="4.5" class="ln a-grow d3b"/>
+                  <rect x="86" y="136" width="150" height="9" rx="4.5" class="ln a-grow d3c"/>
+                  <g class="a-pop d4">
+                    <rect x="86" y="156" width="150" height="24" rx="12" class="or-soft"/>
+                    <path d="M98 162h7a3 3 0 0 1 3 3v9a2.5 2.5 0 0 0-2.5-2.5H98zM118 162h-7a3 3 0 0 0-3 3v9a2.5 2.5 0 0 1 2.5-2.5H118z" fill="none" class="or-stroke" stroke-width="1.6" stroke-linejoin="round"/>
+                    <text x="124" y="172.5" font-size="11.5" font-weight="600" class="t-or">Source · Lesson 4.2</text>
+                  </g>
+                </g>
+                <path d="M236 168 C 300 168, 330 140, 392 140" class="flow" fill="none"/>
+                <g class="lift">
+                  <rect x="408" y="104" width="122" height="88" rx="14" class="surf" opacity=".5"/>
+                  <rect x="400" y="96" width="122" height="88" rx="14" class="surf" opacity=".8"/>
+                  <rect x="392" y="88" width="122" height="88" rx="14" class="surf"/>
+                  <text x="408" y="112" font-size="10.5" font-weight="600" letter-spacing=".06em" class="t-muted">CURRICULUM</text>
+                  <text x="408" y="133" font-size="13.5" font-weight="600" class="t-strong">Science · Gr 10</text>
+                  <rect x="408" y="146" width="90" height="7" rx="3.5" class="ln"/>
+                  <rect x="408" y="160" width="64" height="7" rx="3.5" class="or a-pulse"/>
+                </g>
+              </svg>
+            </div>
+            <div class="comp-body">
+              <div class="comp-meta"><span class="comp-num">01</span><span class="comp-kicker">Learning assistant</span></div>
+              <h3>AI-driven grade-specific learning assistant</h3>
+              <p>Curriculum retrieval with RAG, English–Sinhala interaction, source attribution, and safe handling when the curriculum has no answer.</p>
+              <div class="comp-foot">
+                <ul class="tags"><li>RAG</li><li>Bilingual</li><li>Source attribution</li></ul>
+                <a class="comp-link" href="#method-assistant">Methodology <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 02 · Quiz -->
+          <article class="comp-card reveal">
+            <div class="comp-visual" aria-hidden="true">
+              <svg class="ill" viewBox="0 0 460 240" preserveAspectRatio="xMidYMid meet">
+                <g class="lift">
+                  <circle cx="112" cy="120" r="84" class="surf"/>
+                  <circle cx="112" cy="120" r="62" class="track" fill="none" stroke-width="14"/>
+                  <g transform="rotate(-90 112 120)"><circle cx="112" cy="120" r="62" class="ring a-ring" fill="none" stroke-width="14" stroke-linecap="round" pathLength="100"/></g>
+                  <text x="112" y="124" text-anchor="middle" font-size="30" font-weight="700" letter-spacing="-.03em" class="t-strong">68%</text>
+                  <text x="112" y="144" text-anchor="middle" font-size="11.5" class="t-muted">topic mastery</text>
+                </g>
+                <g class="lift">
+                  <rect x="218" y="34" width="214" height="172" rx="20" class="surf"/>
+                  <text x="238" y="62" font-size="10.5" font-weight="600" letter-spacing=".06em" class="t-muted">ATTEMPTS</text>
+                  <g class="a-pop d4">
+                    <rect x="330" y="46" width="86" height="24" rx="12" class="or-soft"/>
+                    <text x="373" y="62" text-anchor="middle" font-size="11.5" font-weight="600" class="t-or">Difficulty ↑</text>
+                  </g>
+                  <line x1="238" y1="186" x2="414" y2="186" class="axis"/>
+                  <rect x="244" y="156" width="22" height="30" rx="6" class="sky a-bar d1"/>
+                  <rect x="278" y="140" width="22" height="46" rx="6" class="sky a-bar d1b"/>
+                  <rect x="312" y="128" width="22" height="58" rx="6" class="sky a-bar d2"/>
+                  <rect x="346" y="106" width="22" height="80" rx="6" class="sky2 a-bar d2b"/>
+                  <rect x="380" y="86" width="22" height="100" rx="6" class="or a-bar d3"/>
+                  <polyline points="255,146 289,130 323,118 357,96 391,76" class="trend a-draw d3b" fill="none" pathLength="1"/>
+                  <circle cx="391" cy="76" r="5" class="or a-pop d4"/>
+                </g>
+              </svg>
+            </div>
+            <div class="comp-body">
+              <div class="comp-meta"><span class="comp-num">02</span><span class="comp-kicker">Adaptive assessment</span></div>
+              <h3>Intelligent quiz-based assessment</h3>
+              <p>Adaptive difficulty and continuous, evidence-weighted mastery using Bayesian Knowledge Tracing, with targeted recommendations.</p>
+              <div class="comp-foot">
+                <ul class="tags"><li>BKT</li><li>Adaptive</li><li>Mastery</li></ul>
+                <a class="comp-link" href="#method-quiz">Methodology <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 03 · Virtual lab -->
+          <article class="comp-card reveal">
+            <div class="comp-visual" aria-hidden="true">
+              <svg class="ill" viewBox="0 0 460 240" preserveAspectRatio="xMidYMid meet">
+                <defs>
+                  <linearGradient id="ill-liquid" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFB27F"/><stop offset="1" stop-color="#FC6E20"/></linearGradient>
+                  <clipPath id="ill-flask-clip"><path d="M131 44v52L92 182a13 13 0 0 0 12 19h96a13 13 0 0 0 12-19l-39-86V44z"/></clipPath>
+                </defs>
+                <g class="a-drip"><path d="M152 34c-3 5-5 8-5 11a5 5 0 0 0 10 0c0-3-2-6-5-11z" class="or"/></g>
+                <rect x="141" y="2" width="22" height="22" rx="5" class="glass"/>
+                <path d="M131 44v52L92 182a13 13 0 0 0 12 19h96a13 13 0 0 0 12-19l-39-86V44z" class="surf lift"/>
+                <g clip-path="url(#ill-flask-clip)">
+                  <rect x="80" y="140" width="150" height="70" fill="url(#ill-liquid)"/>
+                  <path class="a-wave" d="M40 142 q 15 -8 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 t 30 0 V150 H40z" fill="#FFB27F"/>
+                  <circle cx="132" cy="190" r="5" class="bub a-bub"/>
+                  <circle cx="156" cy="194" r="4" class="bub a-bub d2"/>
+                  <circle cx="176" cy="188" r="6" class="bub a-bub d3"/>
+                </g>
+                <path d="M125 44h54" class="outline" stroke-width="5" stroke-linecap="round"/>
+                <path d="M131 44v52L92 182a13 13 0 0 0 12 19h96a13 13 0 0 0 12-19l-39-86V44" class="outline" fill="none" stroke-width="4" stroke-linejoin="round"/>
+
+                <g class="a-pop d1 lift">
+                  <rect x="246" y="30" width="188" height="74" rx="18" class="or-soft-solid"/>
+                  <circle cx="270" cy="54" r="11" class="or"/>
+                  <text x="270" y="58.5" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">!</text>
+                  <text x="290" y="58.5" font-size="13" font-weight="700" class="t-or">Hint 1 of 3</text>
+                  <rect x="262" y="76" width="150" height="7" rx="3.5" class="or-line"/>
+                  <rect x="262" y="88" width="104" height="7" rx="3.5" class="or-line"/>
+                </g>
+                <g class="lift">
+                  <rect x="246" y="116" width="188" height="96" rx="18" class="surf"/>
+                  <text x="264" y="137" font-size="10.5" font-weight="600" letter-spacing=".06em" class="t-muted">ACTION HISTORY</text>
+                  <g class="a-in d2"><circle cx="270" cy="154" r="8" class="ok"/><path d="M266 154l3 3 5-6" class="tick"/><text x="286" y="158" font-size="12.5" class="t-strong">Rinse burette</text></g>
+                  <g class="a-in d3"><circle cx="270" cy="175" r="8" class="ok"/><path d="M266 175l3 3 5-6" class="tick"/><text x="286" y="179" font-size="12.5" class="t-strong">Add indicator</text></g>
+                  <g class="a-in d4"><circle cx="270" cy="196" r="8" class="bad"/><path d="M267 193l6 6M273 193l-6 6" class="tick"/><text x="286" y="200" font-size="12.5" class="t-strong">Titrate too fast</text></g>
+                </g>
+              </svg>
+            </div>
+            <div class="comp-body">
+              <div class="comp-meta"><span class="comp-num">03</span><span class="comp-kicker">Virtual laboratory</span></div>
+              <h3>AI-guided virtual science laboratory</h3>
+              <p>Curriculum-aligned experiments with deterministic outcomes, progressive hints and behaviour-based misconception diagnosis.</p>
+              <div class="comp-foot">
+                <ul class="tags"><li>Simulation</li><li>Hints</li><li>Diagnosis</li></ul>
+                <a class="comp-link" href="#method-lab">Methodology <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 04 · Handwritten notes -->
+          <article class="comp-card comp-wide reveal">
+            <div class="comp-visual" aria-hidden="true">
+              <svg class="ill" viewBox="0 0 560 240" preserveAspectRatio="xMidYMid meet">
+                <defs>
+                  <linearGradient id="ill-scan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FC6E20" stop-opacity="0"/><stop offset="1" stop-color="#FC6E20" stop-opacity=".35"/></linearGradient>
+                  <clipPath id="ill-paper-clip"><rect x="44" y="22" width="200" height="200" rx="12"/></clipPath>
+                </defs>
+                <g transform="rotate(-4 144 122)">
+                  <rect x="44" y="22" width="200" height="200" rx="12" class="surf lift"/>
+                  <path d="M62 62H226M62 90H226M62 118H226M62 146H226M62 174H226M62 202H226" class="rule"/>
+                  <path d="M66 56c8-9 14 6 22-1s12-6 18 0 14 4 20-2 12 5 20 0 12-4 18 1" class="hw a-draw d1" pathLength="1"/>
+                  <path d="M66 84c6-7 12 5 19 0s13-6 20 0 10 3 17-2 13 4 21 0" class="hw a-draw d2" pathLength="1"/>
+                  <path d="M66 112c9-8 13 6 21 0s12-5 19 1 14 2 20-3 10 4 18 1 10-3 16 0 8 3 14 0" class="hw a-draw d2b" pathLength="1"/>
+                  <path d="M66 140c7-6 12 5 18 0s12-5 18 0 12 3 18-1" class="hw a-draw d3" pathLength="1"/>
+                  <path d="M66 168c8-8 14 6 21 0s13-5 19 1 12 3 19-2 12 4 18 0" class="hw a-draw d3b" pathLength="1"/>
+                  <ellipse cx="96" cy="139" rx="36" ry="13" class="circ a-draw d4" pathLength="1"/>
+                  <g clip-path="url(#ill-paper-clip)"><g class="a-scan"><rect x="44" y="0" width="200" height="34" fill="url(#ill-scan)"/><rect x="44" y="33" width="200" height="2" class="or"/></g></g>
+                </g>
+                <path d="M258 122 H 296" class="flow" fill="none"/>
+                <g class="lift">
+                  <rect x="304" y="26" width="226" height="190" rx="20" class="surf"/>
+                  <text x="324" y="52" font-size="10.5" font-weight="600" letter-spacing=".06em" class="t-muted">CONCEPT COVERAGE</text>
+                  <text x="324" y="72" font-size="13.5" font-weight="600" class="t-strong">Matched · Lesson 4.2</text>
+                  <g class="a-in d2"><rect x="318" y="86" width="198" height="36" rx="12" class="row"/><circle cx="338" cy="104" r="9" class="ok"/><path d="M334 104l3 3 5-6" class="tick"/><text x="354" y="108" font-size="12.5" class="t-strong">Chlorophyll</text><text x="506" y="108" text-anchor="end" font-size="11.5" font-weight="600" class="t-ok">Present</text></g>
+                  <g class="a-in d3"><rect x="318" y="128" width="198" height="36" rx="12" class="row"/><circle cx="338" cy="146" r="9" class="warn"/><path d="M334 146h8" class="tick"/><text x="354" y="150" font-size="12.5" class="t-strong">Light reaction</text><text x="506" y="150" text-anchor="end" font-size="11.5" font-weight="600" class="t-warn">Partial</text></g>
+                  <g class="a-in d4"><rect x="318" y="170" width="198" height="36" rx="12" class="row"/><circle cx="338" cy="188" r="9" class="bad"/><path d="M335 185l6 6M341 185l-6 6" class="tick"/><text x="354" y="192" font-size="12.5" class="t-strong">Calvin cycle</text><text x="506" y="192" text-anchor="end" font-size="11.5" font-weight="600" class="t-bad">Missing</text></g>
+                </g>
+              </svg>
+            </div>
+            <div class="comp-body">
+              <div class="comp-meta"><span class="comp-num">04</span><span class="comp-kicker">Note understanding</span></div>
+              <h3>Curriculum-grounded handwritten-note understanding</h3>
+              <p>Bilingual OCR, lesson matching and concept classification (present / partial / missing) with evidence-linked revision support.</p>
+              <div class="comp-foot">
+                <ul class="tags"><li>OCR</li><li>Classification</li><li>Coverage</li></ul>
+                <a class="comp-link" href="#method-notes">Methodology <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Research journey -->
+    <section class="section" id="journey" aria-labelledby="journey-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Research journey</p>
+          <h2 id="journey-title" class="h2">From problem to final dissemination</h2>
+        </div>
+        <ol class="journey">
+          <li class="reveal"><span class="j-dot">1</span><h3>Initiation</h3><p>Problem motivation, literature exploration, charter and initial scope.</p></li>
+          <li class="reveal"><span class="j-dot">2</span><h3>Proposal</h3><p>Objectives, planned methods, schedule and proposal presentation.</p></li>
+          <li class="reveal"><span class="j-dot">3</span><h3>Development</h3><p>Architecture, four component pipelines and integration decisions.</p></li>
+          <li class="reveal"><span class="j-dot">4</span><h3>Evaluation</h3><p>Data preparation, evaluation protocol, metrics and limitations.</p></li>
+          <li class="reveal"><span class="j-dot">5</span><h3>Dissemination</h3><p>Final reports, research paper, final presentation and viva.</p></li>
+        </ol>
+        <p class="center-link"><a class="text-link" href="#milestones">See assessment milestones →</a></p>
+      </div>
+    </section>
+
+    <!-- ============ DOMAIN ============ -->
+    <section class="section section-domain" id="domain" aria-labelledby="domain-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Domain</p>
+          <h2 id="domain-title" class="h2 h2-xl">The research in depth</h2>
+          <p class="lede">The key ideas behind Nous, from what prior work shows to how the platform was built.</p>
+        </div>
+
+        <nav class="dnav" aria-label="Domain sections">
+          <ol>
+            <li><a href="#literature"><span>01</span>Literature</a></li>
+            <li><a href="#gap"><span>02</span>Gap</a></li>
+            <li><a href="#problem"><span>03</span>Problem</a></li>
+            <li><a href="#objectives"><span>04</span>Objectives</a></li>
+            <li><a href="#methodology"><span>05</span>Methodology</a></li>
+            <li><a href="#technologies"><span>06</span>Technologies</a></li>
+          </ol>
+        </nav>
+
+        <div class="dblocks">
+
+          <section class="dblock" id="literature" aria-labelledby="lit-t">
+            <header class="dblock-head">
+              <span class="dblock-n" aria-hidden="true">01</span>
+              <h3 id="lit-t">Literature survey</h3>
+              <p>AI can support learning in four ways relevant to this study.</p>
+            </header>
+            <div class="dblock-body lit-cards">
+              <article class="lit"><span class="lit-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span>
+                <h4>Conversational AI &amp; RAG</h4><p>Grounding answers in verified content improves reliability, but Sinhala remains low-resource.</p></article>
+              <article class="lit"><span class="lit-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></span>
+                <h4>Adaptive assessment</h4><p>Adjusting difficulty to the learner improves engagement and retention.</p></article>
+              <article class="lit"><span class="lit-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3h6M10 3v6L4.5 18.5A1.7 1.7 0 0 0 6 21h12a1.7 1.7 0 0 0 1.5-2.5L14 9V3"/></svg></span>
+                <h4>Virtual laboratories</h4><p>Simulated practicals can match physical labs, but rarely diagnose misconceptions.</p></article>
+              <article class="lit"><span class="lit-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h11l5 5v11H4z"/><path d="M8 13h8M8 17h5"/></svg></span>
+                <h4>Note analysis</h4><p>Vision and generative AI can reveal knowledge gaps from handwritten notes.</p></article>
+            </div>
+          </section>
+
+          <section class="dblock" id="gap" aria-labelledby="gap-t">
+            <header class="dblock-head">
+              <span class="dblock-n" aria-hidden="true">02</span>
+              <h3 id="gap-t">Research gap</h3>
+              <p>These capabilities exist, but mostly apart and outside the O/L context.</p>
+            </header>
+            <div class="dblock-body gap-cards">
+              <div class="gap-card"><span class="gap-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg></span>
+                <h4>No integration</h4><p>Tutoring, assessment, labs and note analysis are built and evaluated in isolation.</p></div>
+              <div class="gap-card"><span class="gap-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 8l6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></svg></span>
+                <h4>Limited Sinhala</h4><p>Few systems are genuinely bilingual for English and Sinhala learners.</p></div>
+              <div class="gap-card"><span class="gap-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19.5V5a2 2 0 0 1 2-2h14v16H6a2 2 0 0 0-2 2.5z"/><path d="M8 7h8"/></svg></span>
+                <h4>Weak curriculum fit</h4><p>Most tools target higher education, not the Sri Lankan O/L syllabus.</p></div>
+            </div>
+          </section>
+
+          <section class="dblock" id="problem" aria-labelledby="prob-t">
+            <header class="dblock-head">
+              <span class="dblock-n" aria-hidden="true">03</span>
+              <h3 id="prob-t">Research problem</h3>
+              <p>The question that drives the study.</p>
+            </header>
+            <div class="dblock-body">
+              <blockquote class="problem-quote">How can AI provide personalised, interactive and explainable support for Sri Lankan O/L students, while staying aligned with the national curriculum in English and Sinhala?</blockquote>
+            </div>
+          </section>
+
+          <section class="dblock" id="objectives" aria-labelledby="obj-t">
+            <header class="dblock-head">
+              <span class="dblock-n" aria-hidden="true">04</span>
+              <h3 id="obj-t">Research objectives</h3>
+              <p>One overall goal delivered through four components.</p>
+            </header>
+            <div class="dblock-body">
+              <div class="objective-main">
+                <span class="eyebrow">Main objective</span>
+                <p>Build and evaluate an integrated, curriculum-grounded AI learning platform for Grade 10–11 students.</p>
+              </div>
+              <ol class="obj-list">
+                <li><strong>Assistant</strong><span>Bilingual, curriculum-aligned answers with sources</span></li>
+                <li><strong>Quiz</strong><span>Adapt practice to each learner's mastery</span></li>
+                <li><strong>Lab</strong><span>Guide practicals and detect misconceptions</span></li>
+                <li><strong>Notes</strong><span>Find concept gaps in handwritten notes</span></li>
+              </ol>
+            </div>
+          </section>
+
+          <section class="dblock" id="methodology" aria-labelledby="meth-t">
+            <header class="dblock-head">
+              <span class="dblock-n" aria-hidden="true">05</span>
+              <h3 id="meth-t">Methodology</h3>
+              <p>A staged research process, with one core technique per component.</p>
+            </header>
+            <div class="dblock-body">
+              <ol class="stepper">
+                <li><span>Problem &amp; literature</span></li>
+                <li><span>Curriculum data</span></li>
+                <li><span>Design</span></li>
+                <li><span>Implementation</span></li>
+                <li><span>Evaluation</span></li>
+              </ol>
+              <div class="method-grid">
+                <article class="method" id="method-assistant"><span class="m-num">01</span><h4>Learning assistant</h4><p>Retrieval-augmented generation over the curriculum, with cited sources and English–Sinhala translation.</p></article>
+                <article class="method" id="method-quiz"><span class="m-num">02</span><h4>Quiz assessment</h4><p>Evidence-weighted mastery and Bayesian Knowledge Tracing drive adaptive difficulty.</p></article>
+                <article class="method" id="method-lab"><span class="m-num">03</span><h4>Virtual lab</h4><p>Deterministic simulations; Bayesian plan recognition infers misconceptions from actions.</p></article>
+                <article class="method" id="method-notes"><span class="m-num">04</span><h4>Note understanding</h4><p>OCR and lesson matching, then XLM-RoBERTa labels concepts present, partial or missing.</p></article>
+              </div>
+            </div>
+          </section>
+
+          <section class="dblock" id="technologies" aria-labelledby="tech-t">
+            <header class="dblock-head">
+              <span class="dblock-n" aria-hidden="true">06</span>
+              <h3 id="tech-t">Technologies used</h3>
+              <p>The stack behind the Nous platform.</p>
+            </header>
+            <div class="dblock-body tech-groups">
+              <div class="tech-group">
+                <p class="tech-k">Mobile client</p>
+                <ul class="tech-grid">
+                  <li class="tech" style="--brand:#61DAFB"><span class="tech-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"/></svg></span><span class="tech-txt"><strong>React Native</strong><small>Cross-platform app</small></span></li>
+                  <li class="tech tech-mono"><span class="tech-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M0 20.084c.043.53.23 1.063.718 1.778.58.849 1.576 1.315 2.303.567.49-.505 5.794-9.776 8.35-13.29a.761.761 0 011.248 0c2.556 3.514 7.86 12.785 8.35 13.29.727.748 1.723.282 2.303-.567.57-.835.728-1.42.728-2.046 0-.426-8.26-15.798-9.092-17.078-.8-1.23-1.044-1.498-2.397-1.542h-1.032c-1.353.044-1.597.311-2.398 1.542C8.267 3.991.33 18.758 0 19.77Z"/></svg></span><span class="tech-txt"><strong>Expo</strong><small>Build &amp; run tooling</small></span></li>
+                </ul>
+              </div>
+              <div class="tech-group">
+                <p class="tech-k">Backend services</p>
+                <ul class="tech-grid">
+                  <li class="tech" style="--brand:#5FA04E"><span class="tech-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z"/></svg></span><span class="tech-txt"><strong>Node.js</strong><small>Gateway &amp; services</small></span></li>
+                  <li class="tech tech-mono"><span class="tech-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 18.588a1.529 1.529 0 01-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 01-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 011.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 011.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 000 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 002.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 01-2.589 3.957 6.272 6.272 0 01-7.306-.933 6.575 6.575 0 01-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 010 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278-2.882-.04-4.944 2.094-5.071 5.264z"/></svg></span><span class="tech-txt"><strong>Express</strong><small>REST APIs</small></span></li>
+                  <li class="tech" style="--brand:#3776AB"><span class="tech-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg></span><span class="tech-txt"><strong>Python</strong><small>AI services</small></span></li>
+                  <li class="tech" style="--brand:#009688"><span class="tech-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .0387C5.3729.0384.0003 5.3931 0 11.9988c-.001 6.6066 5.372 11.9628 12 11.9625 6.628.0003 12.001-5.3559 12-11.9625-.0003-6.6057-5.3729-11.9604-12-11.96m-.829 5.4153h7.55l-7.5805 5.3284h5.1828L5.279 18.5436q2.9466-6.5444 5.892-13.0896"/></svg></span><span class="tech-txt"><strong>FastAPI</strong><small>Model-serving APIs</small></span></li>
+                </ul>
+              </div>
+              <div class="tech-group">
+                <p class="tech-k">AI &amp; orchestration</p>
+                <ul class="tech-grid">
+                  <li class="tech" style="--brand:#F55036"><span class="tech-logo"><span class="tech-letter" aria-hidden="true">G</span></span><span class="tech-txt"><strong>Groq</strong><small>LLM &amp; vision inference</small></span></li>
+                  <li class="tech tech-mono"><span class="tech-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.0988 5.9175C2.7359 5.9175 0 8.6462 0 12s2.736 6.0825 6.0988 6.0825h11.8024C21.2641 18.0825 24 15.3538 24 12s-2.736-6.0825-6.0988-6.0825ZM5.9774 7.851c.493.0124 1.02.2496 1.273.6228.3673.4592.4778 1.0668.8944 1.4932.5604.6118 1.199 1.1505 1.7161 1.802.4892.5954.8386 1.2937 1.1436 1.9975.1244.2335.1257.5202.31.7197.0908.1204.5346.4483.4383.5645.0555.1204.4702.286.3263.4027-.1944.04-.4129.0476-.5616-.1074-.0549.126-.183.0596-.2819.0432a4 4 0 0 0-.025.0736c-.3288.0219-.5754-.3126-.732-.565-.3111-.168-.6642-.2702-.982-.446-.0182.2895.0452.6485-.231.8353-.014.5565.8436.0656.9222.4804-.061.0067-.1286-.0095-.1774.0373-.2239.2172-.4805-.1645-.7385-.007-.3464.174-.3808.3161-.8096.352-.0237-.0359-.0143-.0592.0059-.0811.1207-.1399.1295-.3046.3356-.3643-.2122-.0334-.3899.0833-.5686.1757-.2323.095-.2304-.2141-.5878.0164-.0396-.0322-.0208-.0615.0018-.0864.0908-.1107.2102-.127.345-.1208-.663-.3686-.9751.4507-1.2813.0432-.092.0243-.1265.1068-.1845.1652-.05-.0548-.0123-.1212-.0099-.1857-.0598-.028-.1356-.041-.1179-.1366-.1171-.0395-.1988.0295-.286.0952-.0787-.0608.0532-.1492.0776-.2125.0702-.1216.23-.025.3111-.1126.2306-.1308.552.0814.8155.0455.203.0255.4544-.1825.3526-.39-.2171-.2767-.179-.6386-.1839-.9695-.0268-.1929-.491-.4382-.6252-.6462-.1659-.1873-.295-.4047-.4243-.6182-.4666-.9008-.3198-2.0584-.9077-2.8947-.266.1466-.6125.0774-.8418-.119-.1238.1125-.1292.2598-.139.4161-.297-.2962-.2593-.8559-.022-1.1855.0969-.1302.2127-.2373.342-.3316.0292-.0213.0391-.0419.0385-.0747.1174-.5267.5764-.7391 1.0694-.7267m12.4071.46c.5575 0 1.0806.2159 1.474.6082s.61.9145.61 1.4704c0 .556-.2167 1.078-.61 1.4698v.0006l-.902.8995a2.08 2.08 0 0 1-.8597.5166l-.0164.0047-.0058.0164a2.05 2.05 0 0 1-.474.7308l-.9018.8995c-.3934.3924-.917.6083-1.4745.6083s-1.0806-.216-1.474-.6083c-.813-.8107-.813-2.1294 0-2.9402l.9019-.8995a2.056 2.056 0 0 1 .858-.5143l.017-.0053.0058-.0158a2.07 2.07 0 0 1 .4752-.7337l.9018-.8995c.3934-.3924.9171-.6083 1.4745-.6083zm0 .8965a1.18 1.18 0 0 0-.8388.3462l-.9018.8995a1.181 1.181 0 0 0-.3427.9252l.0053.0572c.0323.2652.149.5044.3374.6917.13.1296.2733.2114.4471.2686a.9.9 0 0 1 .014.1582.884.884 0 0 1-.2609.6304l-.0554.0554c-.3013-.1028-.5525-.253-.7794-.4792a2.06 2.06 0 0 1-.5761-1.0968l-.0099-.0578-.0461.0368a1.1 1.1 0 0 0-.0876.0794l-.9024.8995c-.4623.461-.4623 1.212 0 1.673.2311.2305.535.346.8394.3461.3043 0 .6077-.1156.8388-.3462l.9019-.8995c.4623-.461.4623-1.2113 0-1.673a1.17 1.17 0 0 0-.4367-.2749 1 1 0 0 1-.014-.1611c0-.2591.1023-.505.2901-.6923.3019.1028.57.2694.7962.495.3007.2999.4994.679.5756 1.0968l.0105.0578.0455-.0373a1.1 1.1 0 0 0 .0887-.0794l.902-.8996c.4622-.461.4628-1.2124 0-1.6735a1.18 1.18 0 0 0-.8395-.3462Zm-9.973 5.1567-.0006.0006c-.0793.3078-.1048.8318-.506.847-.033.1776.1228.2445.2655.1874.141-.0645.2081.0508.2557.1657.2177.0317.5394-.0725.5516-.3298-.325-.1867-.4253-.5418-.5662-.8709"/></svg></span><span class="tech-txt"><strong>LangChain</strong><small>RAG pipelines</small></span></li>
+                  <li class="tech tech-mono"><span class="tech-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.099 5.88H17.9C21.264 5.88 24 8.625 24 12s-2.736 6.12-6.099 6.12H6.1C2.736 18.12 0 15.375 0 12s2.736-6.12 6.099-6.12Zm5.419 9.487c.148.156.367.148.561.108h.002c.09-.073-.038-.166-.16-.254-.074-.054-.145-.105-.166-.15.068-.083-.132-.27-.289-.417a1.539 1.539 0 0 1-.15-.151c-.11-.12-.155-.273-.2-.427a1.575 1.575 0 0 0-.11-.297c-.304-.708-.653-1.41-1.143-2.01-.315-.398-.674-.755-1.033-1.112-.232-.23-.463-.46-.683-.701-.226-.234-.362-.521-.499-.81-.114-.24-.228-.482-.396-.693-.507-.75-2.107-.955-2.342.105 0 .033-.01.054-.039.075-.13.095-.245.203-.342.334-.238.332-.274.895.022 1.193l.001-.02c.01-.15.02-.29.139-.399.228.198.576.268.841.12.32.46.422 1.015.525 1.572.085.464.17.93.382 1.341l.014.022c.124.208.25.419.41.6.059.09.178.187.297.284.157.128.314.256.329.366v.146c-.001.29-.002.59.184.83.103.208-.15.418-.352.392a.989.989 0 0 1-.354-.043c-.165-.04-.329-.08-.462-.003-.038.04-.091.042-.145.043-.064.002-.129.004-.167.07a.29.29 0 0 1-.045.066c-.042.051-.087.107-.033.149l.015-.011c.082-.063.16-.123.27-.085-.014.082.039.103.092.125l.027.012a.357.357 0 0 1-.008.057c-.009.046-.017.09.018.13a.605.605 0 0 0 .046-.056c.037-.046.073-.094.139-.11.144.192.289.112.471.012.206-.114.459-.253.81-.056-.135-.007-.255.01-.345.121-.023.025-.042.054-.002.087.207-.135.294-.086.375-.04.06.032.115.063.212.024l.07-.037c.155-.084.314-.17.499-.14-.139.04-.188.127-.242.223-.026.047-.054.097-.094.143-.021.021-.03.046-.007.082.29-.024.4-.098.548-.197.07-.047.15-.1.261-.157.124-.076.248-.028.368.02.13.05.255.1.371-.013.037-.035.083-.035.129-.036.016 0 .033 0 .05-.002-.037-.194-.24-.191-.448-.189-.24.003-.483.005-.475-.295.222-.152.224-.415.226-.665 0-.06 0-.119.005-.176.163.092.336.163.508.234.162.066.323.133.474.215.157.254.404.59.732.568.008-.026.016-.048.026-.074.019.003.039.008.059.014.086.021.178.045.223-.057zm6.429-2.886a1.014 1.014 0 0 0 1.729-.715 1.01 1.01 0 0 0-1.013-1.01c-.126 0-.25.023-.364.068l-.58-.848-.405.278.583.851a1.009 1.009 0 0 0 .05 1.376zm-1.818-2.744a1.014 1.014 0 0 0 1.42-.615 1.008 1.008 0 0 0-.845-1.293 1.015 1.015 0 0 0-1.095.712 1.008 1.008 0 0 0 .52 1.196zm0 5.867a1.015 1.015 0 0 0 1.42-.615 1.008 1.008 0 0 0-.845-1.293 1.015 1.015 0 0 0-1.095.712 1.008 1.008 0 0 0 .52 1.196zm.932-3.586v-.503h-1.55a1.003 1.003 0 0 0-.218-.412l.583-.864-.424-.28-.583.863a1.014 1.014 0 0 0-.333-.06c-.268 0-.525.106-.714.294a1.002 1.002 0 0 0 1.047 1.655l.583.864.42-.281-.579-.864c.104-.119.178-.26.217-.412z"/></svg></span><span class="tech-txt"><strong>LangGraph</strong><small>Multi-step workflows</small></span></li>
+                  <li class="tech tech-mono"><span class="tech-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.85 0a4.16 4.16 0 0 0-2.95 1.217L1.456 10.66a.835.835 0 0 0 0 1.18.835.835 0 0 0 1.18 0l9.442-9.442a2.49 2.49 0 0 1 3.541 0 2.49 2.49 0 0 1 0 3.541L8.59 12.97l-.1.1a.835.835 0 0 0 0 1.18.835.835 0 0 0 1.18 0l.1-.098 7.03-7.034a2.49 2.49 0 0 1 3.542 0l.049.05a2.49 2.49 0 0 1 0 3.54l-8.54 8.54a1.96 1.96 0 0 0 0 2.755l1.753 1.753a.835.835 0 0 0 1.18 0 .835.835 0 0 0 0-1.18l-1.753-1.753a.266.266 0 0 1 0-.394l8.54-8.54a4.185 4.185 0 0 0 0-5.9l-.05-.05a4.16 4.16 0 0 0-2.95-1.218c-.2 0-.401.02-.6.048a4.17 4.17 0 0 0-1.17-3.552A4.16 4.16 0 0 0 13.85 0m0 3.333a.84.84 0 0 0-.59.245L6.275 10.56a4.186 4.186 0 0 0 0 5.902 4.186 4.186 0 0 0 5.902 0L19.16 9.48a.835.835 0 0 0 0-1.18.835.835 0 0 0-1.18 0l-6.985 6.984a2.49 2.49 0 0 1-3.54 0 2.49 2.49 0 0 1 0-3.54l6.983-6.985a.835.835 0 0 0 0-1.18.84.84 0 0 0-.59-.245"/></svg></span><span class="tech-txt"><strong>MCP</strong><small>Web-search tool server</small></span></li>
+                  <li class="tech" style="--brand:#FFB000"><span class="tech-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.025 1.13c-5.77 0-10.449 4.647-10.449 10.378 0 1.112.178 2.181.503 3.185.064-.222.203-.444.416-.577a.96.96 0 0 1 .524-.15c.293 0 .584.124.84.284.278.173.48.408.71.694.226.282.458.611.684.951v-.014c.017-.324.106-.622.264-.874s.403-.487.762-.543c.3-.047.596.06.787.203s.31.313.4.467c.15.257.212.468.233.542.01.026.653 1.552 1.657 2.54.616.605 1.01 1.223 1.082 1.912.055.537-.096 1.059-.38 1.572.637.121 1.294.187 1.967.187.657 0 1.298-.063 1.921-.178-.287-.517-.44-1.041-.384-1.581.07-.69.465-1.307 1.081-1.913 1.004-.987 1.647-2.513 1.657-2.539.021-.074.083-.285.233-.542.09-.154.208-.323.4-.467a1.08 1.08 0 0 1 .787-.203c.359.056.604.29.762.543s.247.55.265.874v.015c.225-.34.457-.67.683-.952.23-.286.432-.52.71-.694.257-.16.547-.284.84-.285a.97.97 0 0 1 .524.151c.228.143.373.388.43.625l.006.04a10.3 10.3 0 0 0 .534-3.273c0-5.731-4.678-10.378-10.449-10.378M8.327 6.583a1.5 1.5 0 0 1 .713.174 1.487 1.487 0 0 1 .617 2.013c-.183.343-.762-.214-1.102-.094-.38.134-.532.914-.917.71a1.487 1.487 0 0 1 .69-2.803m7.486 0a1.487 1.487 0 0 1 .689 2.803c-.385.204-.536-.576-.916-.71-.34-.12-.92.437-1.103.094a1.487 1.487 0 0 1 .617-2.013 1.5 1.5 0 0 1 .713-.174m-10.68 1.55a.96.96 0 1 1 0 1.921.96.96 0 0 1 0-1.92m13.838 0a.96.96 0 1 1 0 1.92.96.96 0 0 1 0-1.92M8.489 11.458c.588.01 1.965 1.157 3.572 1.164 1.607-.007 2.984-1.155 3.572-1.164.196-.003.305.12.305.454 0 .886-.424 2.328-1.563 3.202-.22-.756-1.396-1.366-1.63-1.32q-.011.001-.02.006l-.044.026-.01.008-.03.024q-.018.017-.035.036l-.032.04a1 1 0 0 0-.058.09l-.014.025q-.049.088-.11.19a1 1 0 0 1-.083.116 1.2 1.2 0 0 1-.173.18q-.035.029-.075.058a1.3 1.3 0 0 1-.251-.243 1 1 0 0 1-.076-.107c-.124-.193-.177-.363-.337-.444-.034-.016-.104-.008-.2.022q-.094.03-.216.087-.06.028-.125.063l-.13.074q-.067.04-.136.086a3 3 0 0 0-.135.096 3 3 0 0 0-.26.219 2 2 0 0 0-.12.121 2 2 0 0 0-.106.128l-.002.002a2 2 0 0 0-.09.132l-.001.001a1.2 1.2 0 0 0-.105.212q-.013.036-.024.073c-1.139-.875-1.563-2.317-1.563-3.203 0-.334.109-.457.305-.454m.836 10.354c.824-1.19.766-2.082-.365-3.194-1.13-1.112-1.789-2.738-1.789-2.738s-.246-.945-.806-.858-.97 1.499.202 2.362c1.173.864-.233 1.45-.685.64-.45-.812-1.683-2.896-2.322-3.295s-1.089-.175-.938.647 2.822 2.813 2.562 3.244-1.176-.506-1.176-.506-2.866-2.567-3.49-1.898.473 1.23 2.037 2.16c1.564.932 1.686 1.178 1.464 1.53s-3.675-2.511-4-1.297c-.323 1.214 3.524 1.567 3.287 2.405-.238.839-2.71-1.587-3.216-.642-.506.946 3.49 2.056 3.522 2.064 1.29.33 4.568 1.028 5.713-.624m5.349 0c-.824-1.19-.766-2.082.365-3.194 1.13-1.112 1.789-2.738 1.789-2.738s.246-.945.806-.858.97 1.499-.202 2.362c-1.173.864.233 1.45.685.64.451-.812 1.683-2.896 2.322-3.295s1.089-.175.938.647-2.822 2.813-2.562 3.244 1.176-.506 1.176-.506 2.866-2.567 3.49-1.898-.473 1.23-2.037 2.16c-1.564.932-1.686 1.178-1.464 1.53s3.675-2.511 4-1.297c.323 1.214-3.524 1.567-3.287 2.405.238.839 2.71-1.587 3.216-.642.506.946-3.49 2.056-3.522 2.064-1.29.33-4.568 1.028-5.713-.624"/></svg></span><span class="tech-txt"><strong>Hugging Face</strong><small>XLM-RoBERTa · Transformers.js</small></span></li>
+                </ul>
+              </div>
+              <div class="tech-group">
+                <p class="tech-k">Data</p>
+                <ul class="tech-grid">
+                  <li class="tech" style="--brand:#4169E1"><span class="tech-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5594 14.7228a.5269.5269 0 0 0-.0563-.1191c-.139-.2632-.4768-.3418-1.0074-.2321-1.6533.3411-2.2935.1312-2.5256-.0191 1.342-2.0482 2.445-4.522 3.0411-6.8297.2714-1.0507.7982-3.5237.1222-4.7316a1.5641 1.5641 0 0 0-.1509-.235C21.6931.9086 19.8007.0248 17.5099.0005c-1.4947-.0158-2.7705.3461-3.1161.4794a9.449 9.449 0 0 0-.5159-.0816 8.044 8.044 0 0 0-1.3114-.1278c-1.1822-.0184-2.2038.2642-3.0498.8406-.8573-.3211-4.7888-1.645-7.2219.0788C.9359 2.1526.3086 3.8733.4302 6.3043c.0409.818.5069 3.334 1.2423 5.7436.4598 1.5065.9387 2.7019 1.4334 3.582.553.9942 1.1259 1.5933 1.7143 1.7895.4474.1491 1.1327.1441 1.8581-.7279.8012-.9635 1.5903-1.8258 1.9446-2.2069.4351.2355.9064.3625 1.39.3772a.0569.0569 0 0 0 .0004.0041 11.0312 11.0312 0 0 0-.2472.3054c-.3389.4302-.4094.5197-1.5002.7443-.3102.064-1.1344.2339-1.1464.8115-.0025.1224.0329.2309.0919.3268.2269.4231.9216.6097 1.015.6331 1.3345.3335 2.5044.092 3.3714-.6787-.017 2.231.0775 4.4174.3454 5.0874.2212.5529.7618 1.9045 2.4692 1.9043.2505 0 .5263-.0291.8296-.0941 1.7819-.3821 2.5557-1.1696 2.855-2.9059.1503-.8707.4016-2.8753.5388-4.1012.0169-.0703.0357-.1207.057-.1362.0007-.0005.0697-.0471.4272.0307a.3673.3673 0 0 0 .0443.0068l.2539.0223.0149.001c.8468.0384 1.9114-.1426 2.5312-.4308.6438-.2988 1.8057-1.0323 1.5951-1.6698zM2.371 11.8765c-.7435-2.4358-1.1779-4.8851-1.2123-5.5719-.1086-2.1714.4171-3.6829 1.5623-4.4927 1.8367-1.2986 4.8398-.5408 6.108-.13-.0032.0032-.0066.0061-.0098.0094-2.0238 2.044-1.9758 5.536-1.9708 5.7495-.0002.0823.0066.1989.0162.3593.0348.5873.0996 1.6804-.0735 2.9184-.1609 1.1504.1937 2.2764.9728 3.0892.0806.0841.1648.1631.2518.2374-.3468.3714-1.1004 1.1926-1.9025 2.1576-.5677.6825-.9597.5517-1.0886.5087-.3919-.1307-.813-.5871-1.2381-1.3223-.4796-.839-.9635-2.0317-1.4155-3.5126zm6.0072 5.0871c-.1711-.0428-.3271-.1132-.4322-.1772.0889-.0394.2374-.0902.4833-.1409 1.2833-.2641 1.4815-.4506 1.9143-1.0002.0992-.126.2116-.2687.3673-.4426a.3549.3549 0 0 0 .0737-.1298c.1708-.1513.2724-.1099.4369-.0417.156.0646.3078.26.3695.4752.0291.1016.0619.2945-.0452.4444-.9043 1.2658-2.2216 1.2494-3.1676 1.0128zm2.094-3.988-.0525.141c-.133.3566-.2567.6881-.3334 1.003-.6674-.0021-1.3168-.2872-1.8105-.8024-.6279-.6551-.9131-1.5664-.7825-2.5004.1828-1.3079.1153-2.4468.079-3.0586-.005-.0857-.0095-.1607-.0122-.2199.2957-.2621 1.6659-.9962 2.6429-.7724.4459.1022.7176.4057.8305.928.5846 2.7038.0774 3.8307-.3302 4.7363-.084.1866-.1633.3629-.2311.5454zm7.3637 4.5725c-.0169.1768-.0358.376-.0618.5959l-.146.4383a.3547.3547 0 0 0-.0182.1077c-.0059.4747-.054.6489-.115.8693-.0634.2292-.1353.4891-.1794 1.0575-.11 1.4143-.8782 2.2267-2.4172 2.5565-1.5155.3251-1.7843-.4968-2.0212-1.2217a6.5824 6.5824 0 0 0-.0769-.2266c-.2154-.5858-.1911-1.4119-.1574-2.5551.0165-.5612-.0249-1.9013-.3302-2.6462.0044-.2932.0106-.5909.019-.8918a.3529.3529 0 0 0-.0153-.1126 1.4927 1.4927 0 0 0-.0439-.208c-.1226-.4283-.4213-.7866-.7797-.9351-.1424-.059-.4038-.1672-.7178-.0869.067-.276.1831-.5875.309-.9249l.0529-.142c.0595-.16.134-.3257.213-.5012.4265-.9476 1.0106-2.2453.3766-5.1772-.2374-1.0981-1.0304-1.6343-2.2324-1.5098-.7207.0746-1.3799.3654-1.7088.5321a5.6716 5.6716 0 0 0-.1958.1041c.0918-1.1064.4386-3.1741 1.7357-4.4823a4.0306 4.0306 0 0 1 .3033-.276.3532.3532 0 0 0 .1447-.0644c.7524-.5706 1.6945-.8506 2.802-.8325.4091.0067.8017.0339 1.1742.081 1.939.3544 3.2439 1.4468 4.0359 2.3827.8143.9623 1.2552 1.9315 1.4312 2.4543-1.3232-.1346-2.2234.1268-2.6797.779-.9926 1.4189.543 4.1729 1.2811 5.4964.1353.2426.2522.4522.2889.5413.2403.5825.5515.9713.7787 1.2552.0696.087.1372.1714.1885.245-.4008.1155-1.1208.3825-1.0552 1.717-.0123.1563-.0423.4469-.0834.8148-.0461.2077-.0702.4603-.0994.7662zm.8905-1.6211c-.0405-.8316.2691-.9185.5967-1.0105a2.8566 2.8566 0 0 0 .135-.0406 1.202 1.202 0 0 0 .1342.103c.5703.3765 1.5823.4213 3.0068.1344-.2016.1769-.5189.3994-.9533.6011-.4098.1903-1.0957.333-1.7473.3636-.7197.0336-1.0859-.0807-1.1721-.151zm.5695-9.2712c-.0059.3508-.0542.6692-.1054 1.0017-.055.3576-.112.7274-.1264 1.1762-.0142.4368.0404.8909.0932 1.3301.1066.887.216 1.8003-.2075 2.7014a3.5272 3.5272 0 0 1-.1876-.3856c-.0527-.1276-.1669-.3326-.3251-.6162-.6156-1.1041-2.0574-3.6896-1.3193-4.7446.3795-.5427 1.3408-.5661 2.1781-.463zm.2284 7.0137a12.3762 12.3762 0 0 0-.0853-.1074l-.0355-.0444c.7262-1.1995.5842-2.3862.4578-3.4385-.0519-.4318-.1009-.8396-.0885-1.2226.0129-.4061.0666-.7543.1185-1.0911.0639-.415.1288-.8443.1109-1.3505.0134-.0531.0188-.1158.0118-.1902-.0457-.4855-.5999-1.938-1.7294-3.253-.6076-.7073-1.4896-1.4972-2.6889-2.0395.5251-.1066 1.2328-.2035 2.0244-.1859 2.0515.0456 3.6746.8135 4.8242 2.2824a.908.908 0 0 1 .0667.1002c.7231 1.3556-.2762 6.2751-2.9867 10.5405zm-8.8166-6.1162c-.025.1794-.3089.4225-.6211.4225a.5821.5821 0 0 1-.0809-.0056c-.1873-.026-.3765-.144-.5059-.3156-.0458-.0605-.1203-.178-.1055-.2844.0055-.0401.0261-.0985.0925-.1488.1182-.0894.3518-.1226.6096-.0867.3163.0441.6426.1938.6113.4186zm7.9305-.4114c.0111.0792-.049.201-.1531.3102-.0683.0717-.212.1961-.4079.2232a.5456.5456 0 0 1-.075.0052c-.2935 0-.5414-.2344-.5607-.3717-.024-.1765.2641-.3106.5611-.352.297-.0414.6111.0088.6356.1851z"/></svg></span><span class="tech-txt"><strong>PostgreSQL</strong><small>Structured data</small></span></li>
+                  <li class="tech" style="--brand:#47A248"><span class="tech-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z"/></svg></span><span class="tech-txt"><strong>MongoDB</strong><small>Document data</small></span></li>
+                  <li class="tech" style="--brand:#DC244C"><span class="tech-logo"><span class="tech-letter" aria-hidden="true">Q</span></span><span class="tech-txt"><strong>Qdrant</strong><small>Vector search</small></span></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MILESTONES ============ -->
+    <section class="section section-tint section-ms" id="milestones" aria-labelledby="ms-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Milestones</p>
+          <h2 id="ms-title" class="h2">Assessment timeline</h2>
+          <p class="lede">Four assessed milestones across two semesters of 2026, from proposal to final presentation.</p>
+        </div>
+
+        <div class="tl">
+          <div class="tl-ranges" aria-hidden="true">
+            <span class="tl-range tl-range-1">Semester 01 · 2026</span>
+            <span class="tl-range tl-range-2">Semester 02 · 2026</span>
+          </div>
+          <div class="tl-line" aria-hidden="true"><span class="tl-fill"></span><span class="tl-spark"></span></div>
+          <ol class="tl-list">
+          <li class="tl-item tl-s1" style="--i:0">
+            <p class="tl-date"><span class="tl-sem"><span class="tl-sem-d">Milestone</span><span class="tl-sem-m">Semester 01 · 2026</span></span><span class="tl-big" aria-hidden="true">01</span></p>
+            <div class="tl-pin" aria-hidden="true"><span class="tl-pin-dot"></span><span class="tl-stem"></span></div>
+            <div class="tl-body">
+              <span class="tl-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span>
+              <div class="tl-text">
+                <h3><span class="sr-only">Milestone 01: </span>Project proposal</h3>
+                <p>Research problem, objectives and planned methodology submitted for approval.</p>
+                <details class="tl-more">
+                  <summary>Assessment details<span class="tl-plus" aria-hidden="true"></span></summary>
+                  <dl>
+                    <div><dt>Scope</dt><dd>Problem, literature, objectives and planned method for all four components.</dd></div>
+                    <div><dt>Marks allocated</dt><dd>To be confirmed</dd></div>
+                  </dl>
+                  <p class="tl-links"><a href="#doc-proposal">Documents</a> · <a href="#pres-proposal">Slides</a></p>
+                </details>
+              </div>
+            </div>
+          </li>
+          <li class="tl-item tl-s1" style="--i:1">
+            <p class="tl-date"><span class="tl-sem"><span class="tl-sem-d">Milestone</span><span class="tl-sem-m">Semester 01 · 2026</span></span><span class="tl-big" aria-hidden="true">02</span></p>
+            <div class="tl-pin" aria-hidden="true"><span class="tl-pin-dot"></span><span class="tl-stem"></span></div>
+            <div class="tl-body">
+              <span class="tl-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M12 16v4M8 20h8M7 12l3-3 2 2 4-4"/></svg></span>
+              <div class="tl-text">
+                <h3><span class="sr-only">Milestone 02: </span>Progress presentation 01</h3>
+                <p>Early design and implementation progress of each component.</p>
+                <details class="tl-more">
+                  <summary>Assessment details<span class="tl-plus" aria-hidden="true"></span></summary>
+                  <dl>
+                    <div><dt>Scope</dt><dd>Design decisions, early prototypes and progress against the proposal.</dd></div>
+                    <div><dt>Marks allocated</dt><dd>To be confirmed</dd></div>
+                  </dl>
+                  <p class="tl-links"><a href="#doc-progress">Documents</a> · <a href="#pres-pp1">Slides</a></p>
+                </details>
+              </div>
+            </div>
+          </li>
+          <li class="tl-item tl-s2" style="--i:2">
+            <p class="tl-date"><span class="tl-sem"><span class="tl-sem-d">Milestone</span><span class="tl-sem-m">Semester 02 · 2026</span></span><span class="tl-big" aria-hidden="true">03</span></p>
+            <div class="tl-pin" aria-hidden="true"><span class="tl-pin-dot"></span><span class="tl-stem"></span></div>
+            <div class="tl-body">
+              <span class="tl-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+              <div class="tl-text">
+                <h3><span class="sr-only">Milestone 03: </span>Progress presentation 02</h3>
+                <p>Integrated platform and early evaluation of each component.</p>
+                <details class="tl-more">
+                  <summary>Assessment details<span class="tl-plus" aria-hidden="true"></span></summary>
+                  <dl>
+                    <div><dt>Scope</dt><dd>Integration across components, evaluation setup and early results.</dd></div>
+                    <div><dt>Marks allocated</dt><dd>To be confirmed</dd></div>
+                  </dl>
+                  <p class="tl-links"><a href="#doc-progress">Documents</a> · <a href="#pres-pp2">Slides</a></p>
+                </details>
+              </div>
+            </div>
+          </li>
+          <li class="tl-item tl-s2" style="--i:3">
+            <p class="tl-date"><span class="tl-sem"><span class="tl-sem-d">Milestone</span><span class="tl-sem-m">Semester 02 · 2026</span></span><span class="tl-big" aria-hidden="true">04</span></p>
+            <div class="tl-pin" aria-hidden="true"><span class="tl-pin-dot"></span><span class="tl-stem"></span></div>
+            <div class="tl-body">
+              <span class="tl-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 9 12 4 2 9l10 5 10-5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5M22 9v6"/></svg></span>
+              <div class="tl-text">
+                <h3><span class="sr-only">Milestone 04: </span>Final presentation</h3>
+                <p>Completed platform, evaluated findings and final reports.</p>
+                <details class="tl-more">
+                  <summary>Assessment details<span class="tl-plus" aria-hidden="true"></span></summary>
+                  <dl>
+                    <div><dt>Scope</dt><dd>Completed system, evaluation results, conclusions and individual contributions.</dd></div>
+                    <div><dt>Marks allocated</dt><dd>To be confirmed</dd></div>
+                  </dl>
+                  <p class="tl-links"><a href="#doc-final">Final reports</a> · <a href="#pres-final">Slides</a></p>
+                </details>
+              </div>
+            </div>
+          </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DOCUMENTS ============ -->
+    <section class="section" id="documents" aria-labelledby="docs-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Documents</p>
+          <h2 id="docs-title" class="h2">Research documents</h2>
+          <p class="lede">Every document produced across the project. Links appear as each file is published.</p>
+        </div>
+
+        <!-- To publish a file: put it in downloads/, add class "is-published" to its <li>, and replace the "Pending"
+             span with the Published chip + <a class="doc-open" href="downloads/file-name.pdf">View</a> link used above. -->
+        <div class="docs">
+
+          <article class="dcard reveal" id="doc-initiation">
+            <div class="dcard-visual" aria-hidden="true">
+              <div class="stack stack-1"><span class="sheet s-front"><span class="sheet-head"></span><span class="sheet-lines"></span><span class="sheet-badge">PDF</span></span></div>
+            </div>
+            <div class="dcard-body">
+              <p class="dcard-stage"><span>01</span>Initiation</p>
+              <h3>Project charter</h3>
+              <p class="dcard-desc">Scope, goals, team roles and timeline agreed at the start of the project.</p>
+              <ul class="doc-rows">
+                <li class="doc-row is-published"><span class="doc-mini" aria-hidden="true"></span><span class="doc-row-t"><strong>Project charter</strong><small>Group · PDF</small><span class="doc-ok">Published</span></span><a class="doc-open" href="downloads/r26-se-035-project-charter.pdf" target="_blank" rel="noopener" aria-label="View project charter (PDF)">View <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="dcard reveal" id="doc-proposal">
+            <div class="dcard-visual" aria-hidden="true">
+              <div class="stack stack-1"><span class="sheet s-front s-proposal"><span class="sheet-head"></span><span class="sheet-lines"></span><span class="sheet-seal"></span><span class="sheet-badge">PDF</span></span></div>
+            </div>
+            <div class="dcard-body">
+              <p class="dcard-stage"><span>02</span>Proposal</p>
+              <h3>Proposal document</h3>
+              <p class="dcard-desc">Research problem, objectives and planned methodology for the integrated platform.</p>
+              <ul class="doc-rows">
+                <li class="doc-row is-published"><span class="doc-mini" aria-hidden="true"></span><span class="doc-row-t"><strong>Proposal document</strong><small>Group · PDF</small><span class="doc-ok">Published</span></span><a class="doc-open" href="downloads/r26-se-035-proposal-document.pdf" target="_blank" rel="noopener" aria-label="View proposal document (PDF)">View <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="dcard reveal" id="doc-progress">
+            <div class="dcard-visual" aria-hidden="true">
+              <div class="stack stack-2">
+                <span class="sheet s-back"><span class="sheet-head"></span><span class="sheet-lines"></span><span class="sheet-badge">PDF</span></span>
+                <span class="sheet s-front s-check"><span class="sheet-head"></span><span class="check-rows"><i></i><i></i><i></i></span><span class="sheet-badge">PDF</span></span>
+              </div>
+            </div>
+            <div class="dcard-body">
+              <p class="dcard-stage"><span>03</span>Progress</p>
+              <h3>Checklist documents</h3>
+              <p class="dcard-desc">Completion checklists submitted with each progress presentation.</p>
+              <ul class="doc-rows">
+                <li class="doc-row is-published"><span class="doc-mini" aria-hidden="true"></span><span class="doc-row-t"><strong>Progress 01 checklist</strong><small>Group · PDF</small><span class="doc-ok">Published</span></span><a class="doc-open" href="downloads/r26-se-035-progress-01-checklist.pdf" target="_blank" rel="noopener" aria-label="View Progress 01 checklist (PDF)">View <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></li>
+                <li class="doc-row"><span class="doc-mini" aria-hidden="true"></span><span class="doc-row-t"><strong>Progress 02 checklist</strong><small>Group · PDF</small></span><span class="status status-pending">Pending</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="dcard dcard-wide reveal" id="doc-final">
+            <div class="dcard-visual" aria-hidden="true">
+              <div class="stack stack-fan">
+                <span class="sheet f4"><span class="sheet-head"></span><span class="sheet-lines"></span><span class="sheet-badge">PDF</span></span>
+                <span class="sheet f3"><span class="sheet-head"></span><span class="sheet-lines"></span><span class="sheet-badge">PDF</span></span>
+                <span class="sheet f2"><span class="sheet-head"></span><span class="sheet-lines"></span><span class="sheet-badge">PDF</span></span>
+                <span class="sheet f1 s-main"><span class="sheet-head"></span><span class="sheet-lines"></span><span class="sheet-tag">Main</span><span class="sheet-badge">PDF</span></span>
+              </div>
+            </div>
+            <div class="dcard-body">
+              <p class="dcard-stage"><span>04</span>Final</p>
+              <h3>Final documents</h3>
+              <p class="dcard-desc">The main group report together with the individual component reports.</p>
+              <ul class="doc-rows doc-rows-2">
+                <li class="doc-row"><span class="doc-mini" aria-hidden="true"></span><span class="doc-row-t"><strong>Main final report</strong><small>Group · main document</small></span><span class="status status-pending">Pending</span></li>
+                <li class="doc-row"><span class="doc-mini" aria-hidden="true"></span><span class="doc-row-t"><strong>Learning assistant</strong><small>Component 01 report</small></span><span class="status status-pending">Pending</span></li>
+                <li class="doc-row"><span class="doc-mini" aria-hidden="true"></span><span class="doc-row-t"><strong>Quiz assessment</strong><small>Component 02 report</small></span><span class="status status-pending">Pending</span></li>
+                <li class="doc-row"><span class="doc-mini" aria-hidden="true"></span><span class="doc-row-t"><strong>Virtual science lab</strong><small>Component 03 report</small></span><span class="status status-pending">Pending</span></li>
+                <li class="doc-row"><span class="doc-mini" aria-hidden="true"></span><span class="doc-row-t"><strong>Note understanding</strong><small>Component 04 report</small></span><span class="status status-pending">Pending</span></li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRESENTATIONS ============ -->
+    <section class="section section-tint" id="presentations" aria-labelledby="pres-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Presentations</p>
+          <h2 id="pres-title" class="h2">Slides of past presentations</h2>
+          <p class="lede">Slides are published as PDF once supplied; future presentations are reserved below.</p>
+        </div>
+        <div class="pres-grid">
+          <article class="pres reveal" id="pres-proposal">
+            <div class="pres-thumb"><span>01</span></div>
+            <h3>Proposal Presentation</h3><p>Group · Semester 01 · 2026</p><div class="pres-foot"><span class="status status-published">Published</span><a class="doc-open" href="https://mysliit-my.sharepoint.com/:p:/g/personal/it22643568_my_sliit_lk/IQDX810WdyJSQ5V0klU75s_TAZ4Wc6yWDyDiBEdnIeRTW3Y?e=8NK4Ir" target="_blank" rel="noopener" aria-label="View Proposal Presentation slides (opens in SharePoint)">View <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></div>
+          </article>
+          <article class="pres reveal" id="pres-pp1">
+            <div class="pres-thumb"><span>02</span></div>
+            <h3>Progress Presentation 1</h3><p>Group · Semester 01 · 2026</p><div class="pres-foot"><span class="status status-published">Published</span><a class="doc-open" href="https://mysliit-my.sharepoint.com/:p:/g/personal/it22643568_my_sliit_lk/IQBdNaYMZxtES7yq2vEtsrpZAdfggy4YG4Fj9r1YBVI-_l4?e=gLvos9" target="_blank" rel="noopener" aria-label="View Progress Presentation 1 slides (opens in SharePoint)">View <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></div>
+          </article>
+          <article class="pres reveal" id="pres-pp2">
+            <div class="pres-thumb"><span>03</span></div>
+            <h3>Progress Presentation 2</h3><p>Group · Semester 02 · 2026</p><div class="pres-foot"><span class="status status-published">Published</span><a class="doc-open" href="https://mysliit-my.sharepoint.com/:p:/g/personal/it22643568_my_sliit_lk/IQBN4Hsbwd-kSpxTBxGzXBhrAeWx5KB2ivt44j8tFKbVugU?e=aM8l39" target="_blank" rel="noopener" aria-label="View Progress Presentation 2 slides (opens in SharePoint)">View <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a></div>
+          </article>
+          <article class="pres reveal" id="pres-final">
+            <div class="pres-thumb"><span>04</span></div>
+            <h3>Final Presentation</h3><p>Group · Semester 02 · 2026</p><div class="pres-foot"><span class="status status-planned">Planned</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section-about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">About us</p>
+          <h2 id="about-title" class="h2">The research team</h2>
+          <p class="lede">Four undergraduate researchers and two academic supervisors from the Faculty of Computing, Sri Lanka Institute of Information Technology.</p>
+          <ul class="team-meta">
+            <li><strong>R26-SE-035</strong> research group</li>
+            <li><strong>4</strong> researchers</li>
+            <li><strong>2</strong> supervisors</li>
+          </ul>
+        </div>
+
+        <div class="team-grid">
+          <article class="m-card m-o reveal">
+            <figure class="m-photo">
+              <img src="assets/images/team/abeykoon.jpg" alt="Portrait of Abeykoon A.M.D.G.A.S" width="480" height="600" loading="lazy">
+              <figcaption class="m-cap">
+                <h3>Abeykoon A.M.D.G.A.S</h3>
+                <span>IT22643568</span>
+              </figcaption>
+            </figure>
+            <div class="m-body">
+              <div class="m-comp">
+                <strong>AI-Driven Grade Specific Learning Assistant</strong>
+              </div>
+              <div class="m-actions">
+                <a class="m-mail" href="mailto:it22643568@my.sliit.lk"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg><span>it22643568@my.sliit.lk</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="m-card m-b reveal">
+            <figure class="m-photo">
+              <img src="assets/images/team/namarathna.jpg" alt="Portrait of Namarathna N.B.A.S.M" width="480" height="600" loading="lazy">
+              <figcaption class="m-cap">
+                <h3>Namarathna N.B.A.S.M</h3>
+                <span>IT22626356</span>
+              </figcaption>
+            </figure>
+            <div class="m-body">
+              <div class="m-comp">
+                <strong>Intelligent Quiz-Based Assessment</strong>
+              </div>
+              <div class="m-actions">
+                <a class="m-mail" href="mailto:it22626356@my.sliit.lk"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg><span>it22626356@my.sliit.lk</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="m-card m-o reveal">
+            <figure class="m-photo">
+              <img src="assets/images/team/liyanage.jpg" alt="Portrait of Liyanage M.K" width="480" height="600" loading="lazy">
+              <figcaption class="m-cap">
+                <h3>Liyanage M.K</h3>
+                <span>IT22607928</span>
+              </figcaption>
+            </figure>
+            <div class="m-body">
+              <div class="m-comp">
+                <strong>AI-Guided Virtual Science Laboratory</strong>
+              </div>
+              <div class="m-actions">
+                <a class="m-mail" href="mailto:it22607928@my.sliit.lk"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg><span>it22607928@my.sliit.lk</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="m-card m-b reveal">
+            <figure class="m-photo">
+              <img src="assets/images/team/lakmal.jpg" alt="Portrait of Lakmal K.A.D" width="480" height="600" loading="lazy">
+              <figcaption class="m-cap">
+                <h3>Lakmal K.A.D</h3>
+                <span>IT22057624</span>
+              </figcaption>
+            </figure>
+            <div class="m-body">
+              <div class="m-comp">
+                <strong>Curriculum-Grounded Handwritten Note Understanding</strong>
+              </div>
+              <div class="m-actions">
+                <a class="m-mail" href="mailto:it22057624@my.sliit.lk"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg><span>it22057624@my.sliit.lk</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="supervision">
+          <div class="supervision-head">
+            <p class="eyebrow">Supervision</p>
+            <h3>Guided by</h3>
+            <p>Academic supervision for research group R26-SE-035.</p>
+          </div>
+          <div class="s-grid">
+            <article class="s-card reveal">
+              <div class="s-photo"><span class="s-backdrop" aria-hidden="true"></span><img src="assets/images/team/samantha-rajapaksha.jpg" alt="Portrait of Prof. Samantha Rajapaksha" width="480" height="600" loading="lazy"></div>
+              <div class="s-body">
+                <span class="s-role">Supervisor</span>
+                <h3>Prof. Samantha Rajapaksha</h3>
+                <p class="s-dept"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V10M19 21V10M9.5 21V10M14.5 21V10M12 3 3 8h18z"/></svg><span>Department of Information Technology<br>SLIIT</span></p>
+                <a class="m-mail" href="mailto:samantha.r@sliit.lk"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg><span>samantha.r@sliit.lk</span></a>
+              </div>
+            </article>
+            <article class="s-card reveal">
+              <div class="s-photo"><span class="s-backdrop" aria-hidden="true"></span><img src="assets/images/team/poojani-gunathilake.jpg" alt="Portrait of Poojani Gunathilake" width="480" height="600" loading="lazy"></div>
+              <div class="s-body">
+                <span class="s-role">Co-supervisor</span>
+                <h3>Poojani Gunathilake</h3>
+                <p class="s-dept"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V10M19 21V10M9.5 21V10M14.5 21V10M12 3 3 8h18z"/></svg><span>Department of Software Engineering<br>SLIIT</span></p>
+                <a class="m-mail" href="mailto:poojani.g@sliit.lk"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg><span>poojani.g@sliit.lk</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="cta reveal">
+          <span class="cta-glow cta-glow-1" aria-hidden="true"></span>
+          <span class="cta-glow cta-glow-2" aria-hidden="true"></span>
+          <span class="cta-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg></span>
+          <p class="eyebrow">Contact us</p>
+          <h2 id="contact-title" class="h2">Questions about the research?</h2>
+          <p class="cta-lede">Get in touch with the R26-SE-035 research team by email.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="mailto:it22643568@my.sliit.lk?subject=Research%20Enquiry%20-%20R26-SE-035%20-%20Nous&amp;body=Name%3A%0AOrganisation%20(if%20applicable)%3A%0AEnquiry%3A%0APreferred%20reply%20address%3A%0A">Send an email <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            <span class="cta-mail">
+              <a href="mailto:it22643568@my.sliit.lk">it22643568@my.sliit.lk</a>
+              <button class="c-copy" type="button" data-copy="it22643568@my.sliit.lk" aria-label="Copy email address" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg><span>Copy</span></button>
+            </span>
+          </div>
+          <p class="cta-note">Opens your own email app. Nothing is sent or stored by this website.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img class="footer-logo" src="assets/images/nous-logo.png" alt="Nous" width="440" height="158" loading="lazy">
+        <p>Research documentation website for group R26-SE-035, Sri Lanka Institute of Information Technology. Prepared for academic purposes.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="#home">Home</a></li><li><a href="#domain">Domain</a></li><li><a href="#milestones">Milestones</a></li><li><a href="#documents">Documents</a></li>
+          <li><a href="#presentations">Presentations</a></li><li><a href="#about">About Us</a></li><li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer-base">
+      <span>© 2026 R26-SE-035 · SLIIT</span>
+      <span>Last updated <time datetime="2026-10-11">11 October 2026</time></span>
+      <a href="#home" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
