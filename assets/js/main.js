@@ -9,9 +9,8 @@
   var toggle = document.querySelector('.theme-toggle');
   if (toggle) {
     toggle.hidden = false;
-    var systemDark = window.matchMedia('(prefers-color-scheme: dark)');
     var current = function () {
-      return root.getAttribute('data-theme') || (systemDark.matches ? 'dark' : 'light');
+      return root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
     };
     var label = function () {
       toggle.setAttribute('aria-label', current() === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
