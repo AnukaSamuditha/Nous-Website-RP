@@ -231,8 +231,9 @@ ul, ol { margin: 0; padding: 0; }
 .hero-title {
   margin-top: 24px; max-width: 900px;
   font-size: clamp(38px, 6.6vw, 76px); font-weight: 600; letter-spacing: -.035em; line-height: 1.04;
-  color: var(--hero-text);
+  color: var(--hero-text); text-wrap: balance;
 }
+.hero-title .grad-text { white-space: nowrap; } /* keep "Sri Lankan O/L" on one line */
 .hero-lede { margin-top: 22px; max-width: 640px; font-size: clamp(16px, 1.6vw, 19px); color: var(--hero-muted); }
 .hero-ctas { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
 
